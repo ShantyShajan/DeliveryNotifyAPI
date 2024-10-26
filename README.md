@@ -32,3 +32,41 @@ The API accepts a JSON request body in the following format:
     "customerId": "1"
 }
 
+```
+###Response Format
+
+The API returns the most recent order details in JSON format:
+```{
+    "customer": {
+        "firstName": "Bob",
+        "lastName": "Marshal"
+    },
+    "order": {
+        "orderNumber": 456,
+        "orderDate": "28-Oct-2023",
+        "deliveryAddress": "1A Uppingham Gate, Uppingham, LE15 9NY",
+        "orderItems": [
+{
+    "customer": {
+        "firstName": "Bob",
+        "lastName": "Marshal"
+    },
+    "order": {
+        "orderNumber": 456,
+        "orderDate": "28-Oct-2023",
+        "deliveryAddress": "1A Uppingham Gate, Uppingham, LE15 9NY",
+        "orderItems": [
+            { "product": "Tennis Ball", "quantity": 2, "priceEach": 30 },
+            { "product": "Tennis Gear", "quantity": 1, "priceEach": 120 },
+            { "product": "Tennis Racket", "quantity": 1, "priceEach": 75 }
+        ],
+        "deliveryExpected": "04-May-2021"
+    }
+}
+,
+        "deliveryExpected": "04-May-2021"
+    }
+}
+
+
+
