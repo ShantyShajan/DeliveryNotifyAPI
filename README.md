@@ -33,10 +33,11 @@ The API accepts a JSON request body in the following format:
 }
 
 ```
-###Response Format
+### Response Format
 
 The API returns the most recent order details in JSON format:
-```{
+```json
+{
     "customer": {
         "firstName": "Bob",
         "lastName": "Marshal"
